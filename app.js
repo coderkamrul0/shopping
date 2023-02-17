@@ -85,7 +85,6 @@ function setData(serial,pName,pPrice,pQuantity,total){
     <td>${pPrice}</td>
     <td>${pQuantity}</td>
     <td>${total}</td>
-    <button id = "deleted" class="btn">Remove</button>
     
     `;
     
