@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="h-[100vh] px-5">
+        <div class="flex gap-3 pt-10">
+            <div class="product w-[60%] grid grid-cols-3 gap-5">
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/7up.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>7 Up</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>50</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>5</span></p>
+                    <div>
+                        <button id="first-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/cocacola.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>Coca Cola</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>60</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>3</span></p>
+                    <div>
+                        <button id="second-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/fanta.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>Fanta</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>40</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>2</span></p>
+                    <div>
+                        <button id="third-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/pepsi.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>Pepsi</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>80</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>2</span></p>
+                    <div>
+                        <button id="four-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/speed.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>Speed</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>35</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>5</span></p>
+                    <div>
+                        <button id="five-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="cart bg-white shadow-md p-3 rounded-xl">
+                    <img class="w-60" src="images/tiger.webp" alt="">
+                    <p class="text-xl font-semibold text-black">Name: <span>Tiger</span></p>
+                    <p class="text-xl font-semibold text-black">Price: <span>35</span></p>
+                    <p class="text-xl font-semibold text-black">Quantity: <span>3</span></p>
+                    <div>
+                        <button id="six-item" type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Add to cart</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="cart w-[40%]">
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                          <!-- <th id="btn">delete</th> -->
+                        </tr>
+                      </thead>
+                      <tbody id="table-container">
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h1 class="text-right text-3xl font-bold mt-5">Total Price : <span id="all-total">00</spa></h1>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
